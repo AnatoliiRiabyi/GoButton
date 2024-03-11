@@ -1,0 +1,54 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eed5bb;
+
+}
+
+.sticker {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы стикер был поверх других элементов */
+}
+
+
+
+.question {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-style: italic;
+}
+
+.buttons {
+    position: fixed;
+    top: calc(50% + 40px); /* С учетом отступа между кнопками и вопросом */
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#no-button {
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+
+}
+
